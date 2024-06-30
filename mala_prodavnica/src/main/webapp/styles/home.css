@@ -1,0 +1,209 @@
+/* Reset and base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #171c24; /* Soft background color */
+    color: #f0f0f0; /* Darker text color for better readability */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menu styles */
+#menu {
+    background-color: #222b36;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#menu a {
+    color: #b0bec5;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #37474f;
+    border-radius: 4px;
+    color: #fff; /* White text on hover for better contrast */
+}
+
+
+.user-info {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #222b36;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Limit container width for better readability */
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product_wrapper, .addProductForm, .cart {
+    width: 100%; /* Full width for these sections */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+.product, .admin-product {
+    background-color: #222b36; /* White background for products */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.product:hover, .admin-product:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.product h2, .admin-product input[type="text"] {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product p, .admin-product input[type="number"] {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.product button, .admin-product button {
+    background-color: #37474f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.product button:hover, .admin-product button:hover {
+    background-color: #546e7a;
+}
+
+.cart {
+    background-color: #222b36;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.items {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item p, .item span {
+    font-size: 16px;
+    margin: 0;
+}
+
+.item button {
+    background-color: #e57373;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.item button:hover {
+    background-color: #ef5350;
+}
+
+.buy-button {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.buy-button:hover {
+    background-color: #81c784;
+}
+
+.button {
+    background-color: #37474f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #546e7a;
+}
+
+form input[type="text"],
+form input[type="number"]{
+    background-color: #37474f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button[type="submit"]:hover {
+    background-color: #546e7a;
+}

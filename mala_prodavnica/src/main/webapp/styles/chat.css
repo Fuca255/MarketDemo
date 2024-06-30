@@ -1,0 +1,145 @@
+/* Reset and base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #171c24; /* Dark background */
+    color: #b0bec5; /* Light text color */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menu styles */
+#menu {
+    background-color: #222b36; /* Dark menu background */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#menu a {
+    color: #b0bec5; /* Light text color for menu items */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #37474f; /* Darker background on hover */
+    border-radius: 4px;
+}
+
+/* Chat styles */
+.container {
+    display: flex;
+    width: 100vw;
+    padding: 0 20px 20px;
+    box-sizing: border-box;
+}
+
+.chat {
+    width: 100%; /* Full width for chat section */
+    padding-right: 20px; /* Add padding for better spacing */
+}
+
+.chat h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #b0bec5; /* Light text color */
+}
+
+.chat-messages {
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #b0bec5;
+    padding: 10px;
+    background-color: #222b36; /* Darker background for chat messages */
+    border-radius: 8px;
+    color: #b0bec5; /* Light text color */
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.message-user {
+    background-color: #64b5f6; /* Blue background for user messages */
+    color: white;
+    text-align: right;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-bottom: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message-server {
+    background-color: #ef5350; /* Red background for server messages */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message-other {
+    background-color: #26a69a; /* Green background for other users' messages */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message-input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #b0bec5;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: #222b36; /* Darker background for message input */
+    color: #b0bec5; /* Light text color */
+}
+
+.message-input button {
+    width: 50px;
+    padding: 10px;
+    background-color: #37474f; /* Dark background for send button */
+    color: #b0bec5; /* Light text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.message-input button:hover {
+    background-color: #546e7a; /* Darker background on hover */
+}
